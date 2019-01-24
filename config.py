@@ -1129,7 +1129,7 @@ def configure(keymap):
 
     ## 「文字列検索 / 置換」のキー設定
     define_key(keymap_emacs, "C-r",   reset_undo(reset_counter(reset_mark(isearch_backward))))
-    define_key(keymap_emacs, "C-s",   reset_undo(reset_counter(reset_mark(isearch_forward))))
+    # define_key(keymap_emacs, "C-s",   reset_undo(reset_counter(reset_mark(isearch_forward))))
     define_key(keymap_emacs, "M-S-5", reset_search(reset_undo(reset_counter(reset_mark(query_replace)))))
 
     ## 「キーボードマクロ」のキー設定
